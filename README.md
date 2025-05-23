@@ -24,11 +24,13 @@ just thought → file → meaning → map
 
 ## tech stack
 
-- language: `rust`
-- terminal ui: [`ratatui`](https://github.com/ratatui-org/ratatui)
-- ai backend: [`llm`](https://github.com/rustformers/llm) or llama.cpp bindings
-- graph logic: [`petgraph`](https://docs.rs/petgraph/)
-- storage: local filesystem + optional `sled` or `sqlite` for metadata
+- language: `c`
+- compiler: `gcc`
+- build system: `make`
+- terminal ui: [`notcurses`](https://github.com/dankamongmen/notcurses)
+- ai backend: [`llama.cpp`](https://github.com/ggerganov/llama.cpp)
+- graph logic: custom structs + [`uthash`](https://troydhanson.github.io/uthash/)
+- storage: local filesystem with `cjson` for parsing and [`cmark`](https://github.com/commonmark/cmark) for markdown
 
 ## status
 
