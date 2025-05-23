@@ -32,8 +32,6 @@ just thought → file → meaning → map
 - graph logic: [`petgraph`](https://docs.rs/petgraph/)
 - storage: local filesystem + optional `sled` or `sqlite` for metadata
 
----
-
 ## status
 
 early development phase. no guarantees.  
