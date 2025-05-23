@@ -4,8 +4,6 @@
 
 it helps you capture, explore, and interconnect your thoughts—without ever touching the cloud.
 
----
-
 ## core idea
 
 - write your thoughts in plain text.
