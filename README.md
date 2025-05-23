@@ -4,8 +4,6 @@
 
 it helps you capture, explore, and interconnect your thoughts—without ever touching the cloud.
 
----
-
 ## core idea
 
 - write your thoughts in plain text.
@@ -14,10 +12,7 @@ it helps you capture, explore, and interconnect your thoughts—without ever tou
 
 no tags. no backlinks. no manual linking.
 
-
 just thought → file → meaning → map
-
----
 
 ## features (planned)
 
@@ -27,8 +22,6 @@ just thought → file → meaning → map
 - fast, local LLM processing using quantized models
 - offline, zero telemetry, zero cloud
 
----
-
 ## tech stack
 
 - language: `rust`
@@ -36,8 +29,6 @@ just thought → file → meaning → map
 - ai backend: [`llm`](https://github.com/rustformers/llm) or llama.cpp bindings
 - graph logic: [`petgraph`](https://docs.rs/petgraph/)
 - storage: local filesystem + optional `sled` or `sqlite` for metadata
-
----
 
 ## status
 
