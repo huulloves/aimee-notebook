@@ -14,10 +14,7 @@ it helps you capture, explore, and interconnect your thoughts—without ever tou
 
 no tags. no backlinks. no manual linking.
 
-
 just thought → file → meaning → map
-
----
 
 ## features (planned)
 
@@ -26,8 +23,6 @@ just thought → file → meaning → map
 - automatic semantic connections between notes
 - fast, local LLM processing using quantized models
 - offline, zero telemetry, zero cloud
-
----
 
 ## tech stack
 
