@@ -71,7 +71,7 @@ int main() {
 	if (!box) return 1;
 
 	// draw box
-	ncplane_perimeter_rounded(box);
+	ncplane_perimeter_rounded(box, 0, 0, 0);
 
 	// static message inside box
 	ncplane_putstr_aligned(box, 5, NCALIGN_CENTER, "navigate using arrow keys");
