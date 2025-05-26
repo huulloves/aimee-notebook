@@ -1,6 +1,6 @@
 //v1.3 adding event-driven static menu box 
 // + input_handler module
-//tui.c
+//start.c
 //
 
 #include <notcurses/notcurses.h>
