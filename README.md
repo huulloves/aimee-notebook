@@ -1,6 +1,6 @@
 # aimee (working name)
 
-**aimee** is a local-first thought processor with a rich terminal UI and built-in LLM-powered semantic linking between notes.
+**aimee** will be a local-first thought processor with a rich terminal UI and built-in LLM-powered semantic linking between notes.
 
 it helps you capture, explore, and interconnect your thoughts—without ever touching the cloud.
 
@@ -24,13 +24,9 @@ just thought → file → meaning → map
 
 ## tech stack
 
-- language: `c`
-- compiler: `gcc`
-- build system: `make`
-- terminal ui: [`notcurses`](https://github.com/dankamongmen/notcurses)
-- ai backend: [`llama.cpp`](https://github.com/ggerganov/llama.cpp)
-- graph logic: custom structs + [`uthash`](https://troydhanson.github.io/uthash/)
-- storage: local filesystem with `cjson` for parsing and [`cmark`](https://github.com/commonmark/cmark) for markdown
+current python, tkinter, sqlite
+
+will implement gpg securtiy chain or equivalent to secure user database
 
 ## status
 
