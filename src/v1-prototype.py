@@ -44,8 +44,9 @@ def distill_event():
             user_data = cursor.execute("SELECT content FROM notes")
             conn.commit()
             print("notes retrieved from database...")
+            print("note content:")
             for row in user_data:
-                print(f"note content: {row[0]}")
+                print(f"{row[0]}")
         except sql3.Error as e:
             print(f"error retrieving from database: {e}")
         finally:
@@ -53,6 +54,7 @@ def distill_event():
 
 def main():
     global text_entry
+    global user_input
 
     root = tk.Tk()
 

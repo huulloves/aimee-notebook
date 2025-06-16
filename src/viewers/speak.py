@@ -1,10 +1,16 @@
 """aimee speak functionality with SQLite database integration"""
 import tkinter as tk
 import sqlite3 as sql3
+import sys
+sys.path.append('../src/modules_base')  # Adjust path as necessary
+
+""" import relative path to canvas config from canvas_config module located in /src/modules_base/canvas_config.py """
+from src.modules_base.canvas_config import create_canvas
+create_canvas()
 
 def connect_to_db():
     try:
-        conn = sql3.connect('aimee-content.db')
+        conn = sql3.connect('aimee-sample-content.db')
         cursor = conn.cursor()
         cursor.execute('''CREATE TABLE IF NOT EXISTS notes
                           (noteID INTEGER PRIMARY KEY, content TEXT)''')
@@ -36,18 +42,13 @@ def main():
     global text_entry
 
     root = tk.Tk()
-
     root.title("aimee")
     root.geometry("800x600")
 
-    canvas_width = 600
-    canvas_height = 500
-
-    canvas = tk.Canvas(root, width=canvas_width, height=canvas_height, bg='white')
-    canvas.pack()
+    canvas = create_canvas(root, width=800, height=600, bg='white')
 
     text_entry = tk.Entry(root, width=40)
-    canvas.create_window(canvas_width // 2, canvas_height - 30, window=text_entry)
+    canvas.create_window(300, 470, window=text_entry)  # Adjust position as needed
     text_entry.insert(0, "enter your notes here...")
 
     frame = tk.Frame(root)
